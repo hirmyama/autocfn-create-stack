@@ -16,5 +16,6 @@ RUN npm i -g aws-cdk
 # RUN pip3 install awscli
 
 COPY entrypoint.sh .
+RUN ["chmod", "+x", "/entrypoint.sh"]
 
 CMD ["/entrypoint.sh"]
